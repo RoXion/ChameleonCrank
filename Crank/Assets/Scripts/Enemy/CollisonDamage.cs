@@ -10,7 +10,6 @@ public class CollisonDamage : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Enter");
             other.SendMessage("ApplyDamage", damage);
             
         }
@@ -20,7 +19,6 @@ public class CollisonDamage : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Enter");
             other.SendMessage("ApplyDamage", damage);
 
         }

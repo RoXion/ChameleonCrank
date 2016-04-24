@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour {
 
     public int maxSpeed;
     public int jumpForce;
+    public bool isLookingRight;
 
     public LayerMask whatIsGround;
     public Transform groundDetector;
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb2D;
 
     void Start () {
+        isLookingRight = true;
         maxSpeed = 5;
         jumpForce = 500;
 
